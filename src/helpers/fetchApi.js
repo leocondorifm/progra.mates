@@ -253,7 +253,7 @@ const products =
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4", 
     "vistas": 456,
-    "timestamp": "03/12/2023 20:21"
+    "timestamp": "03/12/2023 20:21" 
   }
 ]
 
