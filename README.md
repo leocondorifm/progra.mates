@@ -12,7 +12,7 @@ Actualmente, hay dos complementos oficiales disponibles:
 
 Initialization:
 
-# git clone {repo}
-# cd progra.matas
-# npm i vite
-# npm run dev
+git clone {repo}
+cd progra.matas
+npm i vite
+npm run dev
