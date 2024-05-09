@@ -1,0 +1,15 @@
+.header__icons .material-icons {
+    display: none;
+}
+
+.header__icons .display-this {
+    display: inline;
+}
+
+.views{
+    margin-left: 15px;
+}
+
+.bg-setting{
+    background-color: #0066AA;
+}

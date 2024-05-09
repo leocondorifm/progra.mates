@@ -1,0 +1,9 @@
+.header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__left img {
+    width: 100px;
+    margin-left: 0.5rem; /* Changed */
+  }
