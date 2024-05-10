@@ -25,13 +25,13 @@ const ItemList = ({products}) => {
                       <nav aria-label="add to cart">
                           <ul className="pagination">
                           <li className="page-item count">
-                              <button className="page-link"><Link to="/products-details/2"><i className="bi bi-eye-fill"></i></Link></button>
+                            <Link to="/products-details/"><button className="page-link"><i className="bi bi-eye-fill"></i></button></Link>
                           </li>
                               <li className="page-item" aria-current="page">
                               <button className="page-link" href="#"><i className="bi bi-cart-plus-fill color-cart"></i></button>
                               </li>
                               <li className="page-item count disabled">
-                              <button className="page-link">1</button>
+                              <button className="page-link">{products.id}</button>
                               </li>
                               <li className="page-item">
                               <button className="page-link" href="#"><i className="bi bi-cart-dash-fill color-cart"></i></button>

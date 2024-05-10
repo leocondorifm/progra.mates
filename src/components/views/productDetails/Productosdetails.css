@@ -6,3 +6,9 @@
 .inputQuantity{
     max-width: 3rem
 }
+.video__thumbnail_detail{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: -10;
+}
