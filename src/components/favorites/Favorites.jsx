@@ -1,11 +1,24 @@
 import './Favorites.css'
 import ReactPlayer from 'react-player'
+import {Link} from "react-router-dom"
 
 function Favorites() {
   return (
     <>
-    <section class="favorites videos" >
-    <div className="container py-5">
+    <section className="favorites videos" >
+    <div className='breadcrumbP'></div>
+        <div className='breadcrumbPP'>
+            <nav aria-label="breadcrumb">
+                <ol className="breadcrumb">                    
+                    <li className="breadcrumb-item">
+                        <i className="material-symbols-outlined">favorite</i>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        
+    <div className="container py-5" style={{marginTop: "5px"}}>
+
         <div className="row">
         <div className="col-lg-4 col-md-12 mb-4">
             <div className="bg-image hover-zoom ripple shadow-1-strong rounded">

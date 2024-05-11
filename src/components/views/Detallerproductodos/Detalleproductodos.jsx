@@ -166,28 +166,28 @@ function Detalleproductodos() {
                           </ul>
                         </div>
                       </div>
+
                       <table className="table border mt-3 mb-2">
-                        <tr>
-                          <th className="py-2">Display:</th>
+                        <thead>
+                          <tr>
+                            <th className="py-2">Display:</th>
+                            <th className="py-2">Processor capacity:</th>
+                            <th className="py-2">Camera quality:</th>
+                            <th className="py-2">Memory</th>
+                            <th className="py-2">Graphics</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
                           <td className="py-2">13.3-inch LED-backlit display with IPS</td>
-                        </tr>
-                        <tr>
-                          <th className="py-2">Processor capacity:</th>
                           <td className="py-2">2.3GHz dual-core Intel Core i5</td>
-                        </tr>
-                        <tr>
-                          <th className="py-2">Camera quality:</th>
                           <td className="py-2">720p FaceTime HD camera</td>
-                        </tr>
-                        <tr>
-                          <th className="py-2">Memory</th>
                           <td className="py-2">8 GB RAM or 16 GB RAM</td>
-                        </tr>
-                        <tr>
-                          <th className="py-2">Graphics</th>
                           <td className="py-2">Intel Iris Plus Graphics 640</td>
-                        </tr>
+                          </tr>
+                        </tbody>
                       </table>
+                      
                     </div>
                     <div className="tab-pane fade mb-2" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
                       Tab content or sample information now <br />
