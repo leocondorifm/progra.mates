@@ -1,3 +1,11 @@
+.card-profile{
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+}
+.card-profile{
+    margin-top: -50px;
+}
 .bsb-btn-xl{
     --bs-btn-padding-y:0.625rem;
     --bs-btn-padding-x:1.25rem;

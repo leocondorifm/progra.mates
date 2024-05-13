@@ -4,7 +4,7 @@ const Checkout = () => {
   return (
     <>
 <div className="container videos">
-  <main>
+  <main className="molude-checkout">
     <div className="row g-5">
       <div className="col-md-5 col-lg-4 order-md-last">
         <h4 className="d-flex justify-content-between align-items-center mb-3">
@@ -203,7 +203,7 @@ const Checkout = () => {
           
           <hr className="my-4"></hr>
 
-        <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+        <button className="w-100 btn btn-primary" type="submit">Continue to checkout</button>
     </form>
     </div>
 
@@ -213,11 +213,11 @@ const Checkout = () => {
   </main>
 
   <footer className="my-5 pt-5 text-muted text-center text-small">
-    <p className="mb-1">&copy; 2017–2021 Company Name</p>
+    <p className="mb-1"></p>
     <ul className="list-inline">
-      <li className="list-inline-item"><a href="#">Privacy</a></li>
-      <li className="list-inline-item"><a href="#">Terms</a></li>
-      <li className="list-inline-item"><a href="#">Support</a></li>
+      <li className="list-inline-item"></li>
+      <li className="list-inline-item"></li>
+      <li className="list-inline-item"></li>
     </ul>
   </footer>
 </div>
