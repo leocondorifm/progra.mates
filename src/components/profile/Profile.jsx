@@ -4,7 +4,7 @@ function Profile() {
   return (
 
 <section className="videos p-3 p-md-4 p-xl-5">
-  <div className="container module-profile">
+  <div className="container module-profile  my-card">
     <div className="card-profile border-light-subtle shadow-sm">
       <div className="row g-0">
         <div className="col-12 col-md-12">
