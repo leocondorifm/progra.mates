@@ -1,14 +1,16 @@
 import "./Productosdetails.css"
 import { useState, useEffect } from "react"
 import getProducts from "../../../helpers/fetchApi"
+import { useParams } from "react-router-dom"
 
 const Productsdetails = () => {
     const [product,setProduct] = useState({})
+    const {idProduct} = useParams()
 
     useEffect(()=>{ 
         getProducts
         .then((respuesta) => {
-            const newProduct = respuesta.find((product) => product.id === 22)
+            const newProduct = respuesta.find((product) => product.id === idProduct)
             setProduct(newProduct)
             console.log(product) 
         })
@@ -33,7 +35,7 @@ const Productsdetails = () => {
                             <h1 className="display-5 fw-bolder">{product.nombre}</h1>
                             <div className="fs-5 mb-5">
                                 <span className="text-decoration-line-through">$45.00</span>
-                                <span>$40.00</span>
+                                <span>$499.00</span>
                                 <br></br>
                                 <a href={product.video}>{product.video}</a>
                                 <div className="alert alert-primary" role="alert">

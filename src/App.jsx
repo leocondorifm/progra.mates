@@ -61,7 +61,7 @@ function App() {
           <Route path='/checkout/' element={<Checkout/>} />
 
           
-          <Route path="/products-details/" element={<Detalleproductodos />}/>
+          <Route path="/products-details/:idProduct" element={<Detalleproductodos />}/>
         </Routes>
         
       </div>

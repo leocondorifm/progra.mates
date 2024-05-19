@@ -8,7 +8,7 @@ function Profile() {
     <div className="card-profile border-light-subtle shadow-sm">
       <div className="row g-0">
         <div className="col-12 col-md-12">
-          <div className="card-body p-3 p-md-4 p-xl-5 card-profile">
+          <div className="card-body p-3 p-md-4 p-xl-5">
             <div className="row">
               <div className="col-12">
                 <div className="mb-5">
