@@ -1,8 +1,31 @@
-import React from 'react'
 import './Detalleproductodos.css'
 import ReactPlayer from 'react-player'
+import { useState, useEffect } from "react"
+import getProducts from "../../../helpers/fetchApi"
+import { useParams } from "react-router-dom"
 
 function Detalleproductodos() {
+
+  const [product,setProduct] = useState({})
+  const {idProduct} = useParams()
+  console.log('======> '+idProduct) 
+  useEffect(()=>{ 
+      getProducts
+      .then((respuesta) => {
+          const newProduct = respuesta.find((product) => product.id == idProduct)
+          setProduct(newProduct)
+          console.log('=> '+newProduct)
+      })
+      .catch((error)=>console.log(error))
+      .finally(() => {
+        const sizes = product.size
+        console.log('sizes '+sizes)
+      })
+  },[]) 
+
+  
+
+
   return (
     <div className='videos'>
 
@@ -46,8 +69,8 @@ function Detalleproductodos() {
             <main className="col-lg-6">
                 <div className="ps-lg-3">
                 <h4 className="title text-dark">
-                    Quality Men's Hoodie for Winter, Men's Fashion <br />
-                    Casual Hoodie
+                  {product.id} Quality Men's Hoodie for Winter, Men's Fashion <br />
+                  Casual Hoodie
                 </h4>
                 <div className="d-flex flex-row my-3">
                     <div className="text-warning mb-1 me-2">
@@ -56,16 +79,14 @@ function Detalleproductodos() {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fas fa-star-half-alt"></i>
-                    <span className="ms-1">
-                        4.5
-                    </span>
+
                     </div>
-                    <span className="text-muted"><i className="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
+                    <span className="text-muted"><i className="fas fa-shopping-basket fa-sm mx-1"></i>{product.vendidos} orders</span>
                     <span className="text-success ms-2">In stock</span>
                 </div>
 
                 <div className="mb-3">
-                    <span className="h5">$75.00</span>
+                    <span className="h5">${product.precio} </span>
                     <span className="text-muted">/per box</span>
                 </div>
 
@@ -76,16 +97,16 @@ function Detalleproductodos() {
 
                 <div className="row">
                     <dt className="col-3">Type:</dt>
-                    <dd className="col-9">Regular</dd>
+                    <dd className="col-9">{product.type} </dd>
 
                     <dt className="col-3">Color</dt>
-                    <dd className="col-9">Brown</dd>
+                    <dd className="col-9">{product.color} </dd>
 
                     <dt className="col-3">Material</dt>
-                    <dd className="col-9">Cotton, Jeans</dd>
+                    <dd className="col-9">{product.material} </dd>
 
                     <dt className="col-3">Brand</dt>
-                    <dd className="col-9">Reebook</dd>
+                    <dd className="col-9">{product.brand}</dd>
                 </div>
 
                 <hr />
@@ -94,9 +115,13 @@ function Detalleproductodos() {
                     <div className="col-md-4 col-6">
                     <label className="mb-2">Size</label>
                     <select className="form-select border border-secondary size">
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
+                    {
+                    
+                    sizes.map((sizes, index) => (
+                      <option key={index} value={sizes}>
+                        {sizes}
+                      </option>
+                    ))}
                     </select>
                     </div>
 
@@ -145,24 +170,17 @@ function Detalleproductodos() {
                   <div className="tab-content" id="ex1-content">
                     <div className="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
                       <p>
-                        With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
+                       {product.specification}
                       </p>
                       <div className="row mb-2">
                         <div className="col-12 col-md-6">
                           <ul className="list-unstyled mb-0">
-                            <li><i className="fas fa-check text-success me-2"></i>Some great feature name here</li>
-                            <li><i className="fas fa-check text-success me-2"></i>Lorem ipsum dolor sit amet, consectetur</li>
-                            <li><i className="fas fa-check text-success me-2"></i>Duis aute irure dolor in reprehenderit</li>
-                            <li><i className="fas fa-check text-success me-2"></i>Optical heart sensor</li>
+
                           </ul>
                         </div>
                         <div className="col-12 col-md-6 mb-0">
                           <ul className="list-unstyled">
-                            <li><i className="fas fa-check text-success me-2"></i>Easy fast and ver good</li>
-                            <li><i className="fas fa-check text-success me-2"></i>Some great feature name here</li>
-                            <li><i className="fas fa-check text-success me-2"></i>Modern style and design</li>
+
                           </ul>
                         </div>
                       </div>
