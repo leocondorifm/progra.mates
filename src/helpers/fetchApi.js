@@ -21,7 +21,7 @@ const products =
     "categoria": "Categoria 1",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "Calabaza",
+    "category": "Frontend",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -33,7 +33,7 @@ const products =
     "categoria": "Categoria 2",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "Calabaza",
+    "category": "Frontend",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -45,7 +45,7 @@ const products =
     "categoria": "Categoria 1",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "Calabaza",
+    "category": "Backend",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -57,7 +57,7 @@ const products =
     "categoria": "Categoria 2",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "Calabaza",
+    "category": "Frontend",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -69,7 +69,7 @@ const products =
     "categoria": "Categoria 1",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "Calabaza",
+    "category": "Backend",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },

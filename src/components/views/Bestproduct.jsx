@@ -1,21 +1,35 @@
 import { useEffect, useState } from 'react'
 import getProducts from '../../helpers/fetchApi'
+import { useParams } from 'react-router-dom'
 
 import Cart from '../controllers/Cart'
 import './Bestproduct.css'
 import ItemList from './ItemList/ItemList'
 
 
-
 const Bestproduct = () => {  
   const [products, setProducts] = useState([]);   
+  const { idCategory } = useParams()
+  console.log(idCategory)  
 
   useEffect(() => {   
     getProducts
-    .then((response) => setProducts(response))
+    .then((response) => {
+
+      console.log('20=> '+idCategory)
+
+      if(idCategory){
+
+        const NewProduct = response.filter((product)=> product.category === idCategory)
+        
+          setProducts(NewProduct)
+      }else{
+          setProducts(response)
+      }
+    })
     .catch(error => console.log('error', error))
-    .finally(()=>console.log("Finalizó el llamado a la API"));
-  },[]);  
+    .finally(()=>console.log("Finalizó el llamado a la API principal..."));
+  },[idCategory]);  
 
   return ( 
     <>

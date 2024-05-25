@@ -55,6 +55,8 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Bestproduct />}/>
+          
+          <Route path="/category/:idCategory" element={<Bestproduct />}/>
           <Route path='/ofertas/' element={<Ofertas/>} />
           <Route path='/favoritos/' element={<Favorites/>} />
           <Route path='/profile/' element={<Profile />} />
