@@ -2,7 +2,7 @@
 import './Categorias.css'
 import {Link} from "react-router-dom"
 
-let categories = ["Frontend","Backend","Fullstack","Servicios"]
+let categories = ["Frontend","Backend","Fullstack","Servicios","Manager"]
 
 const Categorias = () => {
 

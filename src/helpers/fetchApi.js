@@ -150,7 +150,7 @@ const products =
     "categoria": "Categoria 1",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "PVC",
+    "category": "Servicios",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -162,7 +162,7 @@ const products =
     "categoria": "Categoria 2",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "PVC",
+    "category": "Servicios",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -174,7 +174,7 @@ const products =
     "categoria": "Categoria 1",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "PVC",
+    "category": "Fullstack",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -186,7 +186,7 @@ const products =
     "categoria": "Categoria 2",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "PVC",
+    "category": "Fullstack",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -198,7 +198,7 @@ const products =
     "categoria": "Categoria 1",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "src/assets/video/videoproducto-cafe.mp4",
-    "category": "PVC",
+    "category": "Fullstack",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21"
   },
@@ -307,6 +307,18 @@ const products =
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
     "video": "../src/assets/video/videoproducto-cafe.mp4",
     "category": "Backend",
+    "vistas": 456,
+    "timestamp": "03/12/2023 20:21" 
+  },
+  {
+    "id": 25,
+    "nombre": "Top 5-s Programming Language",
+    "descripcion": "Top 5-s Programming Languages to Learn in 2021 | Best Programming Languages to Learn",
+    "stock": 2,
+    "categoria": "Categoria 2",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
+    "video": "../src/assets/video/videoproducto-cafe.mp4",
+    "category": "Manager",
     "vistas": 456,
     "timestamp": "03/12/2023 20:21" 
   }
