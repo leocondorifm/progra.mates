@@ -315,7 +315,7 @@ const products =
 const getProducts = new Promise((resolve, reject) => {
     setTimeout(()=> {
         resolve(products);
-    },500);
+    },1000);
 })
 
 

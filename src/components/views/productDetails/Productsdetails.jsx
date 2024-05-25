@@ -12,7 +12,6 @@ const Productsdetails = () => {
         .then((respuesta) => {
             const newProduct = respuesta.find((product) => product.id === idProduct)
             setProduct(newProduct)
-            console.log(product) 
         })
         .catch((error)=>console.log(error))
     },[]) 

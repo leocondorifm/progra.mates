@@ -50,7 +50,7 @@ function App() {
           <hr />
 
           <Categorias />
-          <hr />
+          
            
         </div>
         <Routes>
@@ -60,7 +60,6 @@ function App() {
           <Route path='/profile/' element={<Profile />} />
           <Route path='/checkout/' element={<Checkout/>} />
 
-          
           <Route path="/products-details/:idProduct" element={<Detalleproductodos />}/>
         </Routes>
         

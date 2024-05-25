@@ -17,10 +17,7 @@ const MenuPrincipal = () => {
               <span>Ofertas</span>
             </div>
           </Link>
-          <div className="sidebar__category">
-            <i className="material-icons">subscriptions</i>
-            <span>Rating</span>
-          </div>
+
         </div>
     )
 
