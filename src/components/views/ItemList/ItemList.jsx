@@ -44,7 +44,7 @@ const ItemList = ({products}) => {
                 //onMouseOver={handleMouseOver}
                 //onMouseLeave={handleMouseLeave}
                 > 
-                    <video width="100%" height="170px" controls controlsList="nodownload">
+                    <video width="100%" height="500px" controls controlsList="nodownload">
                         <source src={products.video}  type="video/mp4" />
                         Your browser does not support the video tag.. 
                     </video>
