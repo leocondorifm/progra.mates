@@ -1,13 +1,22 @@
 import './Detalleproductodos.css'
-import ReactPlayer from 'react-player'
+
 import { useState, useEffect } from "react"
-import getProducts from "../../../helpers/fetchApi"
 import { useParams } from "react-router-dom"
+import ReactPlayer from 'react-player'
+import { useContext } from 'react'
+import { CartContext } from '../../../context/CartContext'
+
+import getProducts from "../../../helpers/fetchApi"
+import ItemCount from '../../ItemCount/ItemCount'
 
 function Detalleproductodos() {
 
   const [product,setProduct] = useState({})
   const {idProduct} = useParams()
+
+  const {cart, addToCart} = useContext(CartContext)
+  console.log(cart)
+
 
   useEffect(()=>{ 
       getProducts
@@ -22,8 +31,14 @@ function Detalleproductodos() {
       })
   },[]) 
 
+  let sizes = product.size
+
+  const handelClick = (count) => { 
   
-let sizes = product.size
+    const productCart = {...product, quantity: count}
+    addToCart(productCart)
+  
+  } 
 
   return (
     <div className='videos'>
@@ -42,7 +57,7 @@ let sizes = product.size
                 <div className="row d-flex justify-content-center mb-3">
                   <div className="col-lg-6">
                     <a data-fslightbox="mygalley" className="border mx-1 rounded-2" target="_blank" data-type="image" href="https://mdbcdn.b-cdn.net/img/bootstrap-ecommerce/items/detail1/big1.webp" >
-                        <ReactPlayer width="60" height="60" className="rounded-2" url="../src/assets/video/videoproducto-cafe.mp4" controls muted />
+                      <ReactPlayer width="60" height="60" className="rounded-2" url="../src/assets/video/videoproducto-cafe.mp4" controls muted />
                     </a>
                     <a data-fslightbox="mygalley" className="border mx-1 rounded-2" target="_blank" data-type="image" href="https://mdbcdn.b-cdn.net/img/bootstrap-ecommerce/items/detail1/big2.webp">
                       <ReactPlayer width="60" height="60" className="rounded-2" url="../src/assets/video/videoproducto-cafe.mp4" controls muted />
@@ -85,7 +100,7 @@ let sizes = product.size
                 </div>
 
                 <div className="mb-3">
-                    <span className="h5">${product.precio} </span>
+                    <span className="h5">${product.price} </span>
                     <span className="text-muted">/per box</span>
                 </div>
 
@@ -94,6 +109,9 @@ let sizes = product.size
                 </p>
 
                 <hr />
+            
+                <ItemCount products={product} handelClick={handelClick} />
+
     </div>
             </main>
             </div>

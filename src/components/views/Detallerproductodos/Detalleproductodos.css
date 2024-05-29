@@ -11,3 +11,7 @@
 .div-a-img{
     min-width: 96px; height: 96px;
 }
+
+#inputQuantity{
+    max-width: 3rem
+}

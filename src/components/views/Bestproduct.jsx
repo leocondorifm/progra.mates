@@ -9,14 +9,11 @@ import ItemList from './ItemList/ItemList'
 
 const Bestproduct = () => {  
   const [products, setProducts] = useState([]);   
-  const { idCategory } = useParams()
-  console.log(idCategory)  
+  const { idCategory } = useParams()  
 
   useEffect(() => {   
     getProducts
     .then((response) => {
-
-      console.log('20=> '+idCategory)
 
       if(idCategory){
 

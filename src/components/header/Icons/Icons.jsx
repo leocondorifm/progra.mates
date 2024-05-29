@@ -1,9 +1,12 @@
 import './Icons.css';
 import {Link} from "react-router-dom"
+import { useContext } from 'react'
+import { CartContext } from '../../../context/CartContext';
+
 
 const Iconsheader = ({i, f, sum, reset, fav}) => {
 
-console.log('fire!');
+    const { totalQuantity } = useContext(CartContext)
 
     return (
         <div className="header__icons">
@@ -20,7 +23,7 @@ console.log('fire!');
             <span className="position-relative views">
             <i className="material-symbols-outlined">shopping_cart</i>
                 <span className="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-setting">
-                    0
+                    {totalQuantity()}
                     <span className="visually-hidden">unread messages</span>
                 </span>
             </span>

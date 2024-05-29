@@ -9,8 +9,6 @@ import Iconsheader from "./components/header/Icons/Icons";
 import MenuPrincipal from "./components/menu/Principal/Principal";
 import Categorias from "./components/menu/Categorias/Categorias";
 
-//CART
-
 //VIEWS
 import Bestproduct from './components/views/Bestproduct';
 import Productsdetails from './components/views/productDetails/Productsdetails';
@@ -27,17 +25,18 @@ import 'bootstrap-icons/font/bootstrap-icons.min.css';
 //ROUTES
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
+import { CartProvider } from './context/CartContext'
+  
 function App() {
 
   return (
     <BrowserRouter>
+    <CartProvider> 
       <div className="header">
         
         <Logomenu />
 
         <Search />
-
         <Iconsheader />
 
       </div>
@@ -54,6 +53,7 @@ function App() {
            
         </div>
         <Routes>
+       
           <Route path="/" element={<Bestproduct />}/>
           
           <Route path="/category/:idCategory" element={<Bestproduct />}/>
@@ -67,6 +67,7 @@ function App() {
         
       </div>
       <Footer />
+      </CartProvider>
     </BrowserRouter>
   )
 }

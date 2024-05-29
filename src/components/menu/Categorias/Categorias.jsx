@@ -16,7 +16,7 @@ const Categorias = () => {
           </Link>
           {//¡¡¡ => Lo tengo que traer el objeto por base de datos
             categories.map((groupCategory, key) => {
-              return <Link to={`/category/`+groupCategory} className="lnk-button"><div className="sidebar__category" key={key}><span>{groupCategory}</span></div></Link>
+              return <Link to={`/category/`+groupCategory} className="lnk-button" key={key}><div className="sidebar__category" key={key}><span>{groupCategory}</span></div></Link>
             })
           }
 <hr />

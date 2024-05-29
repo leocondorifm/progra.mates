@@ -20,7 +20,7 @@ const Ofertas = () => {
         <div className="row">
         <div className="col-lg-4 col-md-12 mb-4">
             <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
-            <ReactPlayer className="w-100" url="../src/assets/video/videoproducto-cafe.mp4" controls />
+            <ReactPlayer className="w-100" url="./src/assets/video/videoproducto-cafe.mp4" controls />
             <a href="#!">
                 <div className="mask">
                 <div className="d-flex justify-content-start align-items-start h-100">
@@ -36,7 +36,7 @@ const Ofertas = () => {
 
         <div className="col-lg-4 col-md-6 mb-4">
             <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
-            <ReactPlayer className="w-100" url="../src/assets/video/videoproducto-cafe.mp4" controls />
+            <ReactPlayer className="w-100" url="./src/assets/video/videoproducto-cafe.mp4" controls />
             <a href="#!">
                 <div className="mask">
                 <div className="d-flex justify-content-start align-items-start h-100">
@@ -52,7 +52,7 @@ const Ofertas = () => {
 
         <div className="col-lg-4 col-md-6 mb-4">
             <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
-            <ReactPlayer className="w-100" url="../src/assets/video/videoproducto-cafe.mp4" controls />
+            <ReactPlayer className="w-100" url="./src/assets/video/videoproducto-cafe.mp4" controls />
             <a href="#!">
                 <div className="mask">
                 <div className="d-flex justify-content-start align-items-start h-100">
@@ -70,7 +70,7 @@ const Ofertas = () => {
         <div className="row">
         <div className="col-lg-4 col-md-12 mb-4">
             <div className="bg-image hover-zoom ripple shadow-1-strong rounded ripple-surface">
-            <ReactPlayer className="w-100" url="../src/assets/video/videoproducto-cafe.mp4" controls />
+            <ReactPlayer className="w-100" url="./src/assets/video/videoproducto-cafe.mp4" controls />
             <a href="#!">
                 <div className="mask">
                 <div className="d-flex justify-content-start align-items-start h-100">
@@ -86,7 +86,7 @@ const Ofertas = () => {
 
         <div className="col-lg-4 col-md-6 mb-4">
             <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
-            <ReactPlayer className="w-100" url="../src/assets/video/videoproducto-cafe.mp4" controls />
+            <ReactPlayer className="w-100" url="./src/assets/video/videoproducto-cafe.mp4" controls />
             <a href="#!">
                 <div className="mask">
                 <div className="d-flex justify-content-start align-items-start h-100">
@@ -102,7 +102,7 @@ const Ofertas = () => {
 
         <div className="col-lg-4 col-md-6 mb-4">
             <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
-            <ReactPlayer className="w-100" url="../src/assets/video/videoproducto-cafe.mp4" controls />
+            <ReactPlayer className="w-100" url="./src/assets/video/videoproducto-cafe.mp4" controls />
             <a href="#!">
                 <div className="mask">
                 <div className="d-flex justify-content-start align-items-start h-100">
