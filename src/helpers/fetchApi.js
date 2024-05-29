@@ -345,6 +345,19 @@ const products =
     "vistas": 456,
     "price": 9645,
     "timestamp": "03/12/2023 20:21" 
+  },
+  {
+    "id": 26,
+    "nombre": "Top 5-s Programming Language",
+    "descripcion": "Top 5-s Programming Languages to Learn in 2021 | Best Programming Languages to Learn",
+    "stock": 11,
+    "categoria": "Categoria 2",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_707669-MLA47725901552_102021-F.webp",
+    "video": "../src/assets/video/product-0001.mp4",
+    "category": "Manager",
+    "vistas": 456,
+    "price": 9645,
+    "timestamp": "03/12/2023 20:21" 
   }
 ]
 
